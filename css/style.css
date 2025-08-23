@@ -299,6 +299,7 @@
   position: relative;
   height: 42rem;
   overflow: hidden;
+  display: block;
 }
 .visit__card::before {
   position: absolute;
@@ -320,6 +321,50 @@
   height: 100%;
 }
 .visit__img img {
+  border-radius: 1.2rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.feature {
+  background-color: #DBF2FF;
+  padding: 6rem 0;
+}
+.feature__title {
+  margin: 0 0 6rem;
+  text-align: center;
+}
+.feature__title h2 {
+  margin: 0 0 1.6rem;
+}
+.feature__card {
+  border-radius: 1.2rem;
+  position: relative;
+  height: 28rem;
+  overflow: hidden;
+  display: block;
+}
+.feature__card::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.feature__card h3 {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  right: 1rem;
+  left: 1rem;
+}
+.feature__img {
+  height: 100%;
+}
+.feature__img img {
   border-radius: 1.2rem;
   height: 100%;
   -o-object-fit: cover;
