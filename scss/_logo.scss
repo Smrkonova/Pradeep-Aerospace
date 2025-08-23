@@ -1,0 +1,45 @@
+.logo {
+    padding: 8rem 0;
+    overflow: hidden;
+
+    &__list {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            /* duplicate content inside HTML */
+            width: max-content;
+            animation: sliderLine 25s linear infinite;
+        }
+
+        li {
+            flex: 0 0 auto;
+            width: 200px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+/* instead of jumping back, it just keeps sliding */
+@keyframes sliderLine {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

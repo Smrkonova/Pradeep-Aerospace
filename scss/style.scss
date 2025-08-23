@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "variables";
+@import "header";
+@import "home";
+@import "contact";
+@import "logo";
+@import "footer";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif !important;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: #fff !important;
+    height: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.unset {
+    all: unset !important;
+    cursor: pointer !important;
+}
+
+.default-btn {
+    background-color: $primary ;
+    border: none;
+    height: 4.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: 0.8rem;
+}
+
+.sec-title {
+    color: $text;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.sub-title {
+    color: $primary;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    justify-content: center;
+    text-decoration: underline !important;
+}
