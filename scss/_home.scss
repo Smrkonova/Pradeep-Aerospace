@@ -57,6 +57,13 @@
             margin: 0 0 2rem;
         }
     }
+
+    &__img {
+        iframe {
+            width: 100%;
+            border-radius: 1.6rem;
+        }
+    }
 }
 
 .art {
@@ -389,4 +396,26 @@
             margin: 0 0 1rem;
         }
     }
+}
+
+.meeting {
+    padding: 6rem 0;
+    background-color: #DBF2FF;
+
+    &__title {
+        text-align: center;
+        margin: 0 0 6rem;
+
+        h2 {
+            margin: 0 0 2.4rem;
+        }
+    }
+
+    &__video {
+        iframe {
+            width: 100%;
+            border-radius: 2rem;
+        }
+    }
+
 }

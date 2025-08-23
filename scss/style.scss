@@ -51,6 +51,8 @@ img {
     font-size: 1.6rem;
     padding: 1.2rem 2.4rem;
     border-radius: 0.8rem;
+
+
 }
 
 .sec-title {
@@ -68,4 +70,22 @@ img {
     font-weight: 600;
     justify-content: center;
     text-decoration: underline !important;
+
+    img {
+        animation: arrowRight 1.5s infinite;
+    }
+}
+
+@keyframes arrowRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
