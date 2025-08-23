@@ -492,6 +492,50 @@
   border-radius: 2.4rem;
 }
 
+.letter {
+  padding: 8rem 0;
+}
+.letter__title {
+  text-align: center;
+}
+.letter__row ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.letter__row ul li {
+  list-style-type: none;
+  padding: 6rem 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+.letter__right h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 2.4rem;
+  color: #1E2021;
+}
+.letter__right p {
+  color: #929292;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 2.4rem;
+}
+.letter__left {
+  text-align: center;
+}
+.letter__left h3 {
+  color: #004088;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
 .contact {
   padding: 8rem 0 0;
 }
