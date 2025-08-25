@@ -315,6 +315,12 @@
             margin: 0 0 4rem;
         }
     }
+
+    &__img {
+        iframe {
+            width: 100%;
+        }
+    }
 }
 
 .join {

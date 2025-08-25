@@ -472,6 +472,9 @@
   font-weight: 500;
   margin: 0 0 4rem;
 }
+.upcoming__img iframe {
+  width: 100%;
+}
 
 .join {
   background-color: #DBF2FF;
