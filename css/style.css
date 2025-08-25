@@ -657,6 +657,66 @@
   margin: 0 0 6rem;
   color: #1E2021;
 }
+.service__content h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 0 2.4rem;
+  color: #1E2021;
+}
+.service__content p {
+  color: #1E2021;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 0 2.4rem;
+}
+.service__row {
+  padding: 8rem 0 4rem;
+}
+.service__right-img img {
+  border-radius: 1rem;
+}
+.service__gallery {
+  padding: 4rem 0;
+}
+.service__gallery h2 {
+  margin: 0 0 6rem;
+  text-align: center;
+}
+.service__tab .nav-pills {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+.service__tab .nav-pills .nav-item .nav-link {
+  color: #929292;
+  font-weight: 700;
+  font-size: 2.4rem;
+  border-radius: 0;
+}
+.service__tab .nav-pills .nav-item .nav-link.active {
+  background-color: transparent;
+  color: #004088;
+  border-bottom: 0.2rem solid #004088;
+}
+.service__images {
+  margin: 6rem 0 0;
+}
+.service__images ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+.service__images ul li {
+  list-style-type: none;
+}
+.service__images ul li img {
+  height: 42rem;
+  width: 100%;
+  border-radius: 1.2rem;
+}
 
 .contact {
   padding: 8rem 0 0;

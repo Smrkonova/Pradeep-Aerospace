@@ -56,4 +56,84 @@
             color: $text;
         }
     }
+
+    &__content {
+        h3 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 0 0 2.4rem;
+            color: $text;
+        }
+
+        p {
+            color: #1E2021;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 0 0 2.4rem;
+        }
+    }
+
+    &__row {
+        padding: 8rem 0 4rem;
+    }
+
+    &__right-img {
+        img {
+            border-radius: 1rem;
+        }
+    }
+
+    &__gallery {
+        padding: 4rem 0;
+
+        h2 {
+            margin: 0 0 6rem;
+            text-align: center;
+        }
+    }
+
+    &__tab {
+        .nav-pills {
+            justify-content: center;
+            gap: 2rem;
+
+            .nav-item {
+                .nav-link {
+                    color: #929292;
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    border-radius: 0;
+                }
+
+                .nav-link.active {
+                    background-color: transparent;
+                    color: #004088;
+                    border-bottom: 0.2rem solid #004088;
+                }
+            }
+        }
+    }
+
+    &__images {
+        margin: 6rem 0 0;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.4rem;
+
+            li {
+                list-style-type: none;
+
+                img {
+                    height: 42rem;
+                    width: 100%;
+                    border-radius: 1.2rem;
+                }
+            }
+        }
+    }
+
 }
