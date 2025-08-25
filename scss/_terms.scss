@@ -1,0 +1,41 @@
+.terms {
+    padding: 16rem 0 4rem;
+
+    &__content {
+        h1 {
+            text-align: center;
+            color: #1E2021;
+            font-size: 40px;
+            font-weight: 700;
+            margin: 0 0 6rem;
+        }
+
+        h2 {
+            color: #1E2021;
+            font-size: 28px;
+            font-weight: 700;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            color: #1E2021;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0 0 15px;
+            line-height: 1.6;
+        }
+
+        ul {
+            margin: 0 0 20px 20px;
+            padding: 0;
+
+            li {
+                color: #1E2021;
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 8px;
+                line-height: 1.6;
+            }
+        }
+    }
+}

@@ -784,6 +784,41 @@
   right: 20px;
 }
 
+.terms {
+  padding: 16rem 0 4rem;
+}
+.terms__content h1 {
+  text-align: center;
+  color: #1E2021;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 6rem;
+}
+.terms__content h2 {
+  color: #1E2021;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+.terms__content p {
+  color: #1E2021;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 15px;
+  line-height: 1.6;
+}
+.terms__content ul {
+  margin: 0 0 20px 20px;
+  padding: 0;
+}
+.terms__content ul li {
+  color: #1E2021;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
 .contact {
   padding: 8rem 0 0;
 }
