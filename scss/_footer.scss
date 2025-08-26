@@ -2,7 +2,15 @@
     background-color: $primary;
     padding: 6rem 0 4rem;
 
+    @media #{$xs} {
+        padding: 4rem 0;
+    }
+
     &__logo {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         img {
             margin: 0 0 2.4rem;
         }
@@ -16,11 +24,20 @@
     }
 
     &__list {
+        @media #{$xs} {
+            text-align: center;
+            margin: 2rem 0 0;
+        }
+
         h4 {
             color: $white;
             font-size: 1.6rem;
             font-weight: 700;
             margin: 0 0 2.4rem;
+
+            @media #{$xs} {
+                margin: 0 0 1.4rem;
+            }
         }
     }
 
@@ -28,6 +45,10 @@
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
+
+        @media #{$xs} {
+            gap: 0.8rem;
+        }
 
         a {
             font-size: 1.6rem;
@@ -37,6 +58,11 @@
     }
 
     &__end {
+        @media #{$xs} {
+            margin: 2rem 0 0;
+            text-align: center;
+        }
+
         h4 {
             color: $white;
             font-size: 1.6rem;
@@ -56,6 +82,10 @@
                 display: flex;
                 align-items: center;
                 gap: 1.2rem;
+
+                @media #{$xs} {
+                    flex-direction: column;
+                }
             }
         }
     }
@@ -81,6 +111,10 @@
         align-items: center;
         gap: 1.2rem;
         margin: 1.6rem 0 0;
+
+        @media #{$xs} {
+            justify-content: center;
+        }
     }
 
     &__copyright {

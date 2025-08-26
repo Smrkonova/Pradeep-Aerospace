@@ -1,12 +1,24 @@
 .contact {
     padding: 8rem 0 0;
 
+    @media #{$xs} {
+        padding: 4rem 0 0;
+    }
+
     &__title {
         text-align: center;
         margin: 0 0 6rem;
+
+        @media #{$xs} {
+            margin: 0 0 3rem;
+        }
     }
 
     &__left {
+        @media #{$xs} {
+            margin: 0 0 3rem;
+        }
+
         ul {
             padding: 0;
             margin: 0;
@@ -14,11 +26,20 @@
             flex-direction: column;
             gap: 4rem;
 
+            @media #{$xs} {
+                gap: 2rem;
+            }
+
             li {
                 list-style-type: none;
                 display: flex;
                 align-items: center;
                 gap: 2.4rem;
+
+                @media #{$xs} {
+                    flex-direction: column;
+                    text-align: center;
+                }
 
                 img {
                     filter: invert(1);
@@ -90,6 +111,12 @@
             &:focus {
                 box-shadow: none;
             }
+        }
+    }
+
+    &__right {
+        @media #{$xs} {
+            text-align: right;
         }
     }
 }

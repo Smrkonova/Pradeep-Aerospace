@@ -28,6 +28,10 @@
             @media #{$lg} {
                 width: 15rem;
             }
+
+            @media #{$xs} {
+                width: 10rem;
+            }
         }
     }
 
@@ -86,13 +90,19 @@
                 display: block;
             }
         }
+
+        a {
+            @media #{$xm} {
+                display: none;
+            }
+        }
     }
 }
 
 
 
 .offcanvas {
-    background-color: #0E0C15 !important;
+    background-color: #fff !important;
 }
 
 .menu {
@@ -121,7 +131,12 @@
         a {
             font-size: 1.6rem;
             font-weight: 500;
-            color: #fff;
+            color: $text;
+        }
+
+        a.active {
+            color: $primary;
+            font-weight: 700;
         }
     }
 

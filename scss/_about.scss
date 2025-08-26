@@ -1,5 +1,5 @@
 .about {
-    padding: 11.2rem 0 0;
+    padding: 8rem 0 0;
 
     &__bg {
         background-image: url(../assets/img/about/banner.png);
@@ -9,6 +9,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media #{$xs} {
+            background-position: top;
+        }
     }
 
     &__content {
@@ -19,6 +23,10 @@
             font-weight: 700;
             margin: 0 0 2.4rem;
             color: $white;
+
+            @media #{$xs} {
+                font-size: 2.8rem;
+            }
         }
 
         p {
@@ -26,6 +34,10 @@
             color: $white;
             font-weight: 400;
             margin: 0 0 4rem;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
 
         ul {
@@ -38,6 +50,10 @@
             margin: 0;
             justify-content: center;
             border-radius: 1.2rem;
+
+            @media #{$xs} {
+                flex-wrap: wrap;
+            }
 
             li {
                 list-style-type: none;
@@ -58,6 +74,10 @@
 
                 span {
                     color: #E7E6E6;
+
+                    @media #{$xs} {
+                        display: none;
+                    }
                 }
             }
         }
@@ -67,9 +87,17 @@
 .journey {
     padding: 8rem 0;
 
+    @media #{$xs} {
+        padding: 4rem 0;
+    }
+
     &__title {
         text-align: center;
         margin: 0 0 6rem;
+
+        @media #{$xs} {
+            margin: 0 0 3rem;
+        }
 
         h2 {
             margin: 0 0 1.6rem;
@@ -77,11 +105,19 @@
     }
 
     &__content {
+        @media #{$xs} {
+            text-align: center;
+        }
+
         h3 {
             font-size: 3.2rem;
             font-weight: 700;
             margin: 0 0 1.6rem;
             color: $text;
+
+            @media #{$xs} {
+                font-size: 2rem;
+            }
         }
 
         p {
@@ -89,6 +125,10 @@
             font-size: 1.6rem;
             font-weight: 400;
             margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -100,6 +140,11 @@
             font-weight: 700;
             color: $text;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 2rem;
+                text-align: center;
+            }
         }
 
         ul {
@@ -109,6 +154,10 @@
             flex-direction: column;
             gap: 1.6rem;
 
+            @media #{$xs} {
+                margin: 0 0 4rem;
+            }
+
             li {
                 list-style-type: none;
                 padding: 1.2rem;
@@ -117,6 +166,10 @@
                 color: $text;
                 border-radius: 0.8rem;
                 border-left: 0.3rem solid #004088;
+
+                @media #{$xs} {
+                    font-size: 1.4rem;
+                }
             }
         }
     }
@@ -126,9 +179,17 @@
     padding: 6rem 0;
     background-color: #DBF2FF;
 
+    @media #{$xs} {
+        padding: 4rem 0;
+    }
+
     &__title {
         text-align: center;
         margin: 0 0 6rem;
+
+        @media #{$xs} {
+            margin: 0 0 3rem;
+        }
 
         h2 {
             margin: 0 0 1.6rem;
@@ -139,6 +200,11 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 6rem;
+
+        @media #{$xs} {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+        }
     }
 
     &__card {
@@ -151,6 +217,10 @@
             font-weight: 700;
             font-size: 2.4rem;
             margin: 0 0 2.4rem;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
         }
 
         h4 {
@@ -158,6 +228,10 @@
             font-weight: 700;
             margin: 0 0 1.2rem;
             color: $text;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
 
         p {
@@ -165,6 +239,10 @@
             font-weight: 400;
             margin: 0;
             color: $text;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
 
         ul {
@@ -173,6 +251,10 @@
             display: flex;
             flex-direction: column;
             gap: 2.4rem;
+
+            @media #{$xs} {
+                gap: 1.6rem;
+            }
 
             li {
                 list-style-type: none;
@@ -184,6 +266,10 @@
                     color: $text;
                     font-size: 1.6rem;
                     font-weight: 400;
+
+                    @media #{$xs} {
+                        font-size: 1.4rem;
+                    }
                 }
             }
         }
@@ -193,9 +279,17 @@
 .artist {
     padding: 8rem 0;
 
+    @media #{$xs} {
+        padding: 4rem 0;
+    }
+
     &__title {
         text-align: center;
         margin: 0 0 6rem;
+
+        @media #{$xs} {
+            margin: 0 0 3rem;
+        }
 
         h2 {
             margin: 0 0 1.6rem;
@@ -225,9 +319,17 @@
     padding: 6rem 0;
     background-color: #DBF2FF;
 
+    @media #{$xs} {
+        padding: 4rem 0;
+    }
+
     &__title {
         margin: 0 0 6rem;
         text-align: center;
+
+        @media #{$xs} {
+            margin: 0 0 3rem;
+        }
     }
 
     &__content {
@@ -236,6 +338,10 @@
             font-size: 3.2rem;
             font-weight: 700;
             margin: 0 0 4rem;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
         }
     }
 
@@ -244,14 +350,26 @@
         flex-direction: column;
         gap: 2.4rem;
 
+        @media #{$xs} {
+            gap: 1.4rem;
+        }
+
         p {
             font-size: 2rem;
             font-weight: 400;
             margin: 0;
 
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
+
             span {
                 font-weight: 700;
                 font-size: 2.4rem;
+
+                @media #{$xs} {
+                    font-size: 1.8rem;
+                }
             }
         }
     }
@@ -283,6 +401,10 @@
                 font-size: 2.4rem;
                 font-weight: 400;
 
+                @media #{$xs} {
+                    font-size: 1.6rem;
+                }
+
                 span {
                     font-weight: 700;
                 }
@@ -302,15 +424,28 @@
 .add {
     padding: 8rem 0;
 
+    @media #{$xs} {
+        padding: 4rem 0;
+    }
+
     &__title {
         margin: 0 0 6rem;
         text-align: center;
+
+        @media #{$xs} {
+            margin: 0 0 3rem;
+        }
     }
 
     &__grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2.4rem;
+
+        @media #{$xs} {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.4rem;
+        }
     }
 
     &__card {
@@ -328,6 +463,10 @@
             font-size: 2.4rem;
             font-weight: 600;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
         }
 
         p {
@@ -335,6 +474,10 @@
             font-size: 1.6rem;
             font-weight: 400;
             margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.4rem;
+            }
         }
     }
 
@@ -343,6 +486,12 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 2.4rem;
         margin: 8rem 0 0;
+
+        @media #{$xs} {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.4rem;
+            margin: 4rem 0 0;
+        }
 
     }
 
@@ -376,6 +525,10 @@
 .mission {
     padding: 8rem 0;
 
+    @media #{$xs} {
+        padding: 4rem 0;
+    }
+
     &__title {
         text-align: center;
         margin: 0 0 4rem;
@@ -398,6 +551,10 @@
             justify-content: center;
             border-radius: 1.2rem;
 
+            @media #{$xs} {
+                flex-wrap: wrap;
+            }
+
             li {
                 list-style-type: none;
 
@@ -417,6 +574,10 @@
 
                 span {
                     color: #E7E6E6;
+
+                    @media #{$xs} {
+                        display: none;
+                    }
                 }
             }
         }
@@ -432,6 +593,10 @@
             color: #929292;
             max-width: 70%;
             margin: 0 auto;
+
+            @media #{$xs} {
+                max-width: 100%;
+            }
         }
     }
 }
@@ -440,9 +605,17 @@
     background-color: #DBF2FF;
     padding: 6rem 0;
 
+    @media #{$xs} {
+        padding: 4rem 0;
+    }
+
     &__title {
         margin: 0 0 6rem;
         text-align: center;
+
+        @media #{$xs} {
+            margin: 0 0 3rem;
+        }
 
         h2 {
             margin: 0 0 2.4rem;
@@ -453,6 +626,11 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 4rem;
+
+        @media #{$xs} {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.6rem;
+        }
     }
 
     &__card {
@@ -471,6 +649,10 @@
             font-size: 2.4rem;
             font-weight: 700;
             margin: 0 0 1.6rem;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
         }
 
         p {
@@ -478,12 +660,20 @@
             font-size: 2.4rem;
             font-weight: 400;
             margin: 0;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
         }
     }
 }
 
 .vision {
     padding: 8rem 0;
+
+    @media #{$xs} {
+        padding: 4rem 0;
+    }
 
     &__title {
         text-align: center;
@@ -547,9 +737,17 @@
     padding: 6rem 0;
     background-color: #DBF2FF;
 
+    @media #{$xs} {
+        padding: 4rem 0;
+    }
+
     &__title {
         margin: 0 0 6rem;
         text-align: center;
+
+        @media #{$xs} {
+            margin: 0 0 3rem;
+        }
 
         h2 {
             margin: 0 0 2.4rem;
@@ -560,6 +758,11 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 4rem;
+
+        @media #{$xs} {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.6rem;
+        }
     }
 
     &__card {
@@ -573,6 +776,10 @@
             font-size: 2.4rem;
             font-weight: 700;
             margin: 0 0 1.2rem;
+
+            @media #{$xs} {
+                font-size: 1.8rem;
+            }
         }
 
         p {
@@ -580,6 +787,10 @@
             font-weight: 400;
             margin: 0 0 2.4rem;
             color: $text;
+
+            @media #{$xs} {
+                font-size: 1.6rem;
+            }
         }
 
     }
