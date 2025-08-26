@@ -607,6 +607,195 @@
   width: 100%;
 }
 
+.about {
+  padding: 11.2rem 0 0;
+}
+.about__bg {
+  background-image: url(../assets/img/about/banner.png);
+  background-repeat: no-repeat;
+  height: 57.5rem;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about__content {
+  text-align: center;
+}
+.about__content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 0 2.4rem;
+  color: #fff;
+}
+.about__content p {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 400;
+  margin: 0 0 4rem;
+}
+.about__content ul {
+  padding: 1.2rem 1.6rem;
+  border: 1px solid #E7E6E6;
+  background: rgba(30, 32, 33, 0.2);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.4rem;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1.2rem;
+}
+.about__content ul li {
+  list-style-type: none;
+}
+.about__content ul li h3 {
+  color: #00A1FF;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 1.2rem;
+}
+.about__content ul li p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+.about__content ul li span {
+  color: #E7E6E6;
+}
+
+.journey {
+  padding: 8rem 0;
+}
+.journey__title {
+  text-align: center;
+  margin: 0 0 6rem;
+}
+.journey__title h2 {
+  margin: 0 0 1.6rem;
+}
+.journey__content h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+  color: #1E2021;
+}
+.journey__content p {
+  color: #1E2021;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+.journey__list {
+  margin: 2.4rem 0 0;
+}
+.journey__list h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1E2021;
+  margin: 0 0 1.6rem;
+}
+.journey__list ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+}
+.journey__list ul li {
+  list-style-type: none;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #1E2021;
+  border-radius: 0.8rem;
+  border-left: 0.3rem solid #004088;
+}
+
+.excell {
+  padding: 6rem 0;
+  background-color: #DBF2FF;
+}
+.excell__title {
+  text-align: center;
+  margin: 0 0 6rem;
+}
+.excell__title h2 {
+  margin: 0 0 1.6rem;
+}
+.excell__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+}
+.excell__card {
+  background-color: #fff;
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+}
+.excell__card h3 {
+  color: #1E2021;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin: 0 0 2.4rem;
+}
+.excell__card h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 1.2rem;
+  color: #1E2021;
+}
+.excell__card p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+  color: #1E2021;
+}
+.excell__card ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+}
+.excell__card ul li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+}
+.excell__card ul li span {
+  color: #1E2021;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
 .service__banner {
   height: 65rem;
   position: relative;
@@ -1154,6 +1343,12 @@ img {
   color: #1E2021;
   font-size: 4rem;
   font-weight: 700;
+}
+
+.para-title {
+  color: #1E2021;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .sub-title {

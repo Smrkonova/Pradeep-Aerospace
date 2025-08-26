@@ -3,6 +3,7 @@
 @import "variables";
 @import "header";
 @import "home";
+@import "about";
 @import "service";
 @import "terms";
 @import "contact";
@@ -61,6 +62,12 @@ img {
     color: $text;
     font-size: 4rem;
     font-weight: 700;
+}
+
+.para-title {
+    color: $text;
+    font-size: 1.6rem;
+    font-weight: 400;
 }
 
 .sub-title {
