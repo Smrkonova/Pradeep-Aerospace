@@ -796,6 +796,351 @@
   font-weight: 400;
 }
 
+.artist {
+  padding: 8rem 0;
+}
+.artist__title {
+  text-align: center;
+  margin: 0 0 6rem;
+}
+.artist__title h2 {
+  margin: 0 0 1.6rem;
+}
+.artist__content {
+  text-align: center;
+}
+.artist__content p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 0 1.6rem;
+  color: #1E2021;
+}
+.artist__content h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+  color: #1E2021;
+}
+
+.signature {
+  padding: 6rem 0;
+  background-color: #DBF2FF;
+}
+.signature__title {
+  margin: 0 0 6rem;
+  text-align: center;
+}
+.signature__content h3 {
+  color: #1E2021;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin: 0 0 4rem;
+}
+.signature__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+}
+.signature__flex p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+.signature__flex p span {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.signature__card {
+  background-color: #F5F5F5;
+  border-radius: 1.2rem;
+  padding: 1.6rem;
+  border-left: 3px solid #004088;
+  margin: 4rem 0 0;
+}
+.signature__card h4 {
+  color: #004088;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 2.4rem;
+}
+.signature__card ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+}
+.signature__card ul li {
+  list-style-type: none;
+  color: #1E2021;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.signature__card ul li span {
+  font-weight: 700;
+}
+.signature__img {
+  height: 100%;
+}
+.signature__img img {
+  height: 100%;
+}
+
+.add {
+  padding: 8rem 0;
+}
+.add__title {
+  margin: 0 0 6rem;
+  text-align: center;
+}
+.add__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+}
+.add__card {
+  border: 1px solid #E7E6E6;
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+  text-align: center;
+}
+.add__card img {
+  margin: 0 0 2.4rem;
+}
+.add__card h3 {
+  color: #1E2021;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0 0 1.6rem;
+}
+.add__card p {
+  color: #1E2021;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+.add__flex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+  margin: 8rem 0 0;
+}
+.add__flex-card {
+  background-color: #004088;
+  border-radius: 1.2rem;
+  padding: 2.4rem 2.4rem 4rem;
+  text-align: center;
+}
+.add__flex-card img {
+  margin: 0 0 4rem;
+}
+.add__flex-card h3 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+}
+.add__flex-card p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.mission {
+  padding: 8rem 0;
+}
+.mission__title {
+  text-align: center;
+  margin: 0 0 4rem;
+}
+.mission__title h2 {
+  margin: 0 0 1.6rem;
+}
+.mission__list {
+  text-align: center;
+}
+.mission__list ul {
+  padding: 1.2rem 1.6rem;
+  border: 1px solid #E7E6E6;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.4rem;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1.2rem;
+}
+.mission__list ul li {
+  list-style-type: none;
+}
+.mission__list ul li h3 {
+  color: #00A1FF;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 1.2rem;
+}
+.mission__list ul li p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+  color: #1E2021;
+}
+.mission__list ul li span {
+  color: #E7E6E6;
+}
+.mission__para {
+  margin: 4rem 0 0;
+}
+.mission__para p {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #929292;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.award {
+  background-color: #DBF2FF;
+  padding: 6rem 0;
+}
+.award__title {
+  margin: 0 0 6rem;
+  text-align: center;
+}
+.award__title h2 {
+  margin: 0 0 2.4rem;
+}
+.award__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+.award__card {
+  background-color: #fff;
+  border-radius: 1.2rem;
+  text-align: center;
+  padding: 1.6rem;
+}
+.award__card img {
+  margin: 0 0 1.6rem;
+}
+.award__card span {
+  display: block;
+  color: #004088;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+}
+.award__card p {
+  color: #1E2021;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.vision {
+  padding: 8rem 0;
+}
+.vision__title {
+  text-align: center;
+  margin: 0 0 4rem;
+}
+.vision__title h2 {
+  margin: 0 0 1.6rem;
+}
+.vision__box {
+  background: #EAF4FF;
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+}
+.vision__box p {
+  text-align: center;
+  color: #1E2021;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 2.4rem;
+  position: relative;
+  z-index: 1;
+}
+.vision__box p::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-image: url(../assets/img/about/camma.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: -1.5rem;
+}
+.vision__box span {
+  display: block;
+  text-align: end;
+  color: #1E2021;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.vision__para {
+  margin: 6rem 0 0;
+  text-align: center;
+}
+.vision__para p {
+  color: #929292;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.part {
+  padding: 6rem 0;
+  background-color: #DBF2FF;
+}
+.part__title {
+  margin: 0 0 6rem;
+  text-align: center;
+}
+.part__title h2 {
+  margin: 0 0 2.4rem;
+}
+.part__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+.part__card {
+  background-color: #fff;
+  padding: 4rem 1.6rem;
+  text-align: center;
+  border-radius: 1.2rem;
+}
+.part__card h3 {
+  color: #1E2021;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 1.2rem;
+}
+.part__card p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0 2.4rem;
+  color: #1E2021;
+}
+
 .service__banner {
   height: 65rem;
   position: relative;
