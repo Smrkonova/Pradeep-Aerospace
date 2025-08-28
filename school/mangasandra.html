@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pradeep</title>
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="header"></div>
+  <section class="service">
+    <div class="service__banner">
+      <div class="service__img">
+        <img src="../assets/img/schools/mangasandra/banner.jpg" alt="">
+      </div>
+      <div class="container">
+        <div class="service__banner-content">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <h1>Bengaluru North University, PG Centre</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <section class="service__content-list">
+        <div class="service__content-list__list">
+          <h2>🎓 Special Lecture Series Participation – DISCOURSE</h2>
+
+          <p><strong>Date:</strong> 31st May 2025</p>
+          <p><strong>Venue:</strong> Bengaluru North University, PG Centre (Government of Karnataka University),
+            Mangasandra, Kolar District</p>
+
+          <p>
+            I had the privilege to participate in the <strong>Special Lecture Series – DISCOURSE</strong>,
+            a landmark academic initiative organized by Bengaluru North University, PG Centre, Mangasandra, Kolar
+            District.
+          </p>
+
+          <h3>🗣️ Theme of the Session:</h3>
+          <p>“Dr. A.P.J. Abdul Kalam – Life, Mission, and Vision: India 2020 and Beyond”</p>
+
+          <p>
+            This inspiring session explored the values, scientific vision, and national aspirations envisioned by
+            <strong>Dr. A.P.J. Abdul Kalam</strong>, India’s Missile Man and 11th President.
+            The discourse emphasized his ideas on youth empowerment, innovation, and the roadmap for a self-reliant
+            India beyond 2020.
+          </p>
+
+          <h3>✨ Takeaways:</h3>
+          <ul>
+            <li>Reflections on Dr. Kalam’s contributions to science, technology, and national development</li>
+            <li>Importance of youth leadership in achieving the vision of a developed India</li>
+            <li>Role of education, aerospace, and innovation in national transformation</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <div class="service__gallery">
+        <h2 class="sec-title">Photo Gallery</h2>
+        <div class="service__tab">
+          <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1"
+                type="button" role="tab" aria-controls="pills-1" aria-selected="true">All</button>
+            </li>
+
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab"
+              tabindex="0">
+              <div class="service__images">
+                <ul>
+                  <li>
+                    <img src="../assets/img/schools/mangasandra/all/1.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="../assets/img/schools/mangasandra/all/2.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="../assets/img/schools/mangasandra/all/3.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="../assets/img/schools/mangasandra/all/4.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="../assets/img/schools/mangasandra/all/5.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="../assets/img/schools/mangasandra/all/6.jpg" alt="">
+                  </li>
+                  <li>
+                    <img src="../assets/img/schools/mangasandra/all/7.jpg" alt="">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preview Modal -->
+  <div class="image-modal" id="imageModal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+
+
+  <div id="contact"></div>
+  <div id="logo"></div>
+  <div id="footer"></div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const images = document.querySelectorAll(".service__images img");
+    const closeBtn = document.querySelector(".image-modal .close");
+    const prevBtn = document.querySelector(".image-modal .prev");
+    const nextBtn = document.querySelector(".image-modal .next");
+
+    let currentIndex = 0;
+
+    // Open modal
+    images.forEach((img, index) => {
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+        currentIndex = index;
+      });
+    });
+
+    // Close modal
+    closeBtn.onclick = () => (modal.style.display = "none");
+
+    // Prev button
+    prevBtn.onclick = () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      modalImg.src = images[currentIndex].src;
+    };
+
+    // Next button
+    nextBtn.onclick = () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      modalImg.src = images[currentIndex].src;
+    };
+
+    // Close on background click
+    modal.onclick = (e) => {
+      if (e.target === modal) modal.style.display = "none";
+    };
+  </script>
+
+
+</body>
+
+</html>
