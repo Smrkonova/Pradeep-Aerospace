@@ -270,7 +270,7 @@
     text-align: center;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .we__img {
     margin: 3rem 0 0;
   }
@@ -303,6 +303,11 @@
 @media (max-width: 767px) {
   .art__grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .art__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .art__card {
@@ -385,6 +390,11 @@
 @media (max-width: 767px) {
   .visit__grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .visit__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .visit__card {
@@ -576,7 +586,7 @@
   font-weight: 500;
   margin: 0 0 4rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .upcoming__img {
     margin: 4rem 0 0;
   }
@@ -592,6 +602,11 @@
 @media (max-width: 767px) {
   .join__content {
     text-align: center;
+    margin: 4rem 0 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .join__content {
     margin: 4rem 0 0;
   }
 }
@@ -705,6 +720,11 @@
 @media (max-width: 767px) {
   .meeting__list {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .meeting__list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .meeting__card {

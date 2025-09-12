@@ -71,7 +71,7 @@
     }
 
     &__img {
-        @media #{$xs} {
+        @media #{$xm} {
             margin: 3rem 0 0;
         }
 
@@ -106,6 +106,10 @@
 
         @media #{$xs} {
             grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media #{$md} {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
@@ -185,6 +189,10 @@
 
         @media #{$xs} {
             grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media #{$md} {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
@@ -394,7 +402,7 @@
     }
 
     &__img {
-        @media #{$xs} {
+        @media #{$xm} {
             margin: 4rem 0 0;
         }
 
@@ -411,6 +419,10 @@
     &__content {
         @media #{$xs} {
             text-align: center;
+            margin: 4rem 0 0;
+        }
+
+        @media #{$md} {
             margin: 4rem 0 0;
         }
 
@@ -538,6 +550,10 @@
 
         @media #{$xs} {
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media #{$md} {
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 
