@@ -1823,6 +1823,167 @@
   margin: 1rem 0 0 2rem;
 }
 
+/* CSS (put in your stylesheet) */
+:root {
+  --text-color: #1E2021;
+  --muted: #666e73;
+  --card-bg: #ffffff;
+  --gap: 1.6rem;
+  --radius: 12px;
+  --max-width: 1200px;
+}
+
+/* Container */
+.service__para-lists {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 6rem 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--text-color);
+}
+
+/* Header */
+.service__header {
+  margin-bottom: 1.5rem;
+}
+
+.service__main-title {
+  font-size: 4rem;
+  font-weight: 800;
+  /* increased weight per request */
+  color: var(--text-color);
+  margin: 0 0 4rem;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.service__subtitle {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-top: 0.35rem;
+}
+
+/* Intro / paragraph style (exactly as requested) */
+.service__intro,
+.service__desc {
+  font-size: 1.6rem;
+  /* requested */
+  line-height: 1.8;
+  /* requested */
+  margin: 0 0 2rem;
+  /* requested */
+  color: var(--text-color);
+  /* requested */
+  text-align: justify;
+  /* requested */
+}
+
+/* Grid layout for cards */
+.service__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media (max-width: 767px) {
+  .service__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Card */
+.service__card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 2rem;
+  -webkit-box-shadow: 0 6px 18px rgba(30, 32, 33, 0.04);
+          box-shadow: 0 6px 18px rgba(30, 32, 33, 0.04);
+  border: 1px solid rgba(30, 32, 33, 0.04);
+  height: 100%;
+}
+
+/* Titles inside each card - same color & increased weight */
+.service__title {
+  font-size: 1.45rem;
+  color: var(--text-color);
+  font-weight: 700;
+  /* slightly less than main title but emphasized */
+  margin: 0 0 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+/* definition list styling */
+.service__lists {
+  margin: 0;
+  padding: 0;
+}
+
+.service__list-item {
+  margin-bottom: 1.1rem;
+}
+
+.service__item-name {
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  font-size: 1.15rem;
+  color: var(--text-color);
+}
+
+.service__desc {
+  margin: 0;
+}
+
+/* Objective footer */
+.service__objective {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(30, 32, 33, 0.06);
+}
+
+.service__objective-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: var(--text-color);
+}
+
+/* Small screens adjustments */
+@media (max-width: 520px) {
+  .service__main-title {
+    font-size: 1.8rem;
+  }
+  .service__para-lists {
+    padding: 1rem;
+  }
+  :root {
+    --gap: 1rem;
+  }
+}
+/* Print-friendly */
+@media print {
+  .service__para-lists {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+  .service__card {
+    page-break-inside: avoid;
+    border: none;
+  }
+}
 .terms {
   padding: 16rem 0 4rem;
 }
