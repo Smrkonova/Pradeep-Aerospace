@@ -504,6 +504,23 @@
             font-weight: 500;
             margin: 0 0 2.4rem;
         }
+
+
+    }
+
+    &__lists {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        padding: 0 0 3rem 3rem;
+
+
+        h4 {
+            list-style-type: none;
+            color: #929292;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
     }
 
     &__left {
@@ -519,6 +536,10 @@
 
     &__img {
         margin: 0 0 3rem;
+
+        img {
+            width: 50%;
+        }
     }
 }
 
