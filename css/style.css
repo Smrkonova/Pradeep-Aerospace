@@ -1709,6 +1709,23 @@
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
+.service__para-list {
+  padding: 8rem 0 0;
+}
+.service__para-list h3 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 0 6rem;
+  color: #1E2021;
+}
+.service__para-list p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin: 0 0 2rem;
+  color: #1E2021;
+  text-align: justify;
+}
 
 /* Modal */
 .image-modal {
