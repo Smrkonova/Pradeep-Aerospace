@@ -239,6 +239,8 @@
 .feature {
     background-color: #DBF2FF;
     padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
 
     &__title {
         margin: 0 0 6rem;
@@ -289,6 +291,7 @@
 
 .works {
     padding: 8rem 0;
+    overflow: hidden;
 
     &__title {
         text-align: center;
@@ -648,7 +651,7 @@
 .hero {
     min-height: 67rem;
     position: relative;
-    padding: 10rem 0 4rem;
+    padding: 10rem 0 8rem;
     overflow: hidden;
 
     &__video {
@@ -690,11 +693,19 @@
         margin: 4rem 0 0;
 
         @media #{$xs} {
-            grid-template-columns: repeat(2, 1fr);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
         }
 
         img {
             border-radius: 1.6rem;
+
+            @media #{$xs} {
+                width: 15rem;
+            }
         }
     }
 }
