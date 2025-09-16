@@ -2704,4 +2704,26 @@ img {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+.thank {
+  padding: 10rem 0 4rem;
+}
+.thank img {
+  width: 40rem;
+}
+
+.thank-container {
+  text-align: center;
+  padding: 40px 24px;
+  border-radius: 16px;
+}
+.thank-container h1 {
+  font-size: 4rem;
+  margin-bottom: 12px;
+  color: #1E2021;
+}
+.thank-container p {
+  color: #929292;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
 }/*# sourceMappingURL=style.css.map */

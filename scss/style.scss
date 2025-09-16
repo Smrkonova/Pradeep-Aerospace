@@ -107,3 +107,32 @@ img {
         transform: translateX(0);
     }
 }
+
+.thank {
+    padding: 10rem 0 4rem;
+
+    img {
+        width: 40rem;
+    }
+}
+
+.thank-container {
+    text-align: center;
+    padding: 40px 24px;
+    border-radius: 16px;
+
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 12px;
+        color: $text;
+    }
+
+    p {
+        color: $para;
+        margin-bottom: 24px;
+        font-size: 1.8rem;
+    }
+
+
+}
