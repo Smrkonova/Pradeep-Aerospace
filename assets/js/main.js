@@ -15,16 +15,19 @@ fetch('/./shared/header.html')
             }
         });
 
-        // Add scroll detection for header
-        const headerEl = document.querySelector('.header');
-        window.addEventListener("scroll", function () {
-            if (window.scrollY > 50) {
-                headerEl.classList.add("scrolled");
-            } else {
-                headerEl.classList.remove("scrolled");
-            }
-        });
+        // Add scroll detection only for home page
+        if (currentPath === "/" || currentPath.endsWith("index.html")) {
+            const headerEl = document.querySelector('.header');
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 50) {
+                    headerEl.classList.add("scrolled");
+                } else {
+                    headerEl.classList.remove("scrolled");
+                }
+            });
+        }
     });
+
 // Load footer
 fetch('/./shared/footer.html')
     .then(res => res.text())

@@ -5,7 +5,7 @@
     right: 0;
     z-index: 9;
     transition: all 0.3s ease;
-    // background-color: #fff;
+    background-color: #fff;
     // background: rgba(255, 255, 255, 0.2);
     // /* transparent white */
     // backdrop-filter: blur(10px);
@@ -188,6 +188,13 @@
 
 }
 
-.header.scrolled {
-    background-color: #fff;
+
+.home-header {
+    .header {
+        background-color: transparent !important;
+    }
+
+    .header.scrolled {
+        background-color: #fff !important;
+    }
 }
