@@ -201,6 +201,12 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 6rem;
 
+        @media #{$md} {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+
         @media #{$xs} {
             grid-template-columns: repeat(1, 1fr);
             gap: 2rem;
@@ -442,6 +448,10 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 2.4rem;
 
+        @media #{$md} {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         @media #{$xs} {
             grid-template-columns: repeat(1, 1fr);
             gap: 1.4rem;
@@ -486,6 +496,10 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 2.4rem;
         margin: 8rem 0 0;
+
+        @media #{$md} {
+            grid-template-columns: repeat(2, 1fr);
+        }
 
         @media #{$xs} {
             grid-template-columns: repeat(1, 1fr);

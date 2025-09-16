@@ -9,11 +9,19 @@ fetch('/./shared/header.html')
         const navLinks = document.querySelectorAll('.header__middle a');
 
         navLinks.forEach(link => {
-            // Compare link href with current path
             const linkPath = new URL(link.href).pathname;
-
             if (linkPath === currentPath) {
                 link.classList.add('active'); // Add active class
+            }
+        });
+
+        // Add scroll detection for header
+        const headerEl = document.querySelector('.header');
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 50) {
+                headerEl.classList.add("scrolled");
+            } else {
+                headerEl.classList.remove("scrolled");
             }
         });
     });
