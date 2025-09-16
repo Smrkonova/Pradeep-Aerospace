@@ -1680,6 +1680,7 @@
 .service__banner {
   height: 65rem;
   position: relative;
+  overflow: hidden;
 }
 .service__banner::before {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.5)));
