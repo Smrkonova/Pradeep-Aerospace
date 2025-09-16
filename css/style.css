@@ -205,7 +205,8 @@
 
 .banner {
   position: relative;
-  min-height: 100vh;
+  min-height: 50rem;
+  padding: 0 0 8rem;
 }
 .banner__slide-img {
   height: 100%;
@@ -215,10 +216,11 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 1.6rem;
 }
 .banner__row {
   position: relative;
-  min-height: 100vh;
+  min-height: 50rem;
 }
 .banner__left {
   position: absolute;
@@ -239,7 +241,7 @@
 .banner .swiper,
 .banner .swiper-wrapper,
 .banner .swiper-slide {
-  height: 100vh;
+  height: 50rem;
 }
 
 .we {
