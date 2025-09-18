@@ -36,27 +36,28 @@
         </div>
         <div class="col-md-6">
           <div class="contact__right">
-            <form>
+            <form action="../sendmail.php" method="POST">
               <div class="row">
                 <div class="col-md-6">
                   <div class="contact__input">
-                    <input type="text" placeholder="Name" class="form-control">
+                    <input type="text" name="fullname" placeholder="Name" class="form-control" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="contact__input">
-                    <input type="email" placeholder="Email" class="form-control">
+                    <input type="email" name="email" placeholder="Email" class="form-control" required>
                   </div>
                 </div>
               </div>
               <div class="contact__input">
-                <input type="text" placeholder="Subject" class="form-control">
+                <input type="text" name="subject" placeholder="Subject" class="form-control" required>
               </div>
               <div class="contact__text">
-                <textarea class="form-control" placeholder="Message" rows="6"></textarea>
+                <textarea name="message" class="form-control" placeholder="Message" rows="6" required></textarea>
               </div>
               <button type="submit" class="default-btn">Send Message</button>
             </form>
+
           </div>
         </div>
       </div>

@@ -1,4 +1,6 @@
 .service {
+    padding: 8rem 0 0;
+
     &__banner {
         height: 65rem;
         position: relative;
@@ -47,6 +49,8 @@
             font-weight: 400;
             margin: 0;
             color: #fff;
+            max-width: 50%;
+            margin: 0 auto;
         }
 
     }
