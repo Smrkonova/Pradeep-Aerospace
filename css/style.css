@@ -286,6 +286,9 @@
     text-align: center;
   }
 }
+.we__img {
+  height: 100%;
+}
 @media (max-width: 991px) {
   .we__img {
     margin: 3rem 0 0;
@@ -294,14 +297,36 @@
 .we__img iframe {
   width: 100%;
   border-radius: 1.6rem;
+  height: 100%;
+}
+.we__left {
+  background-color: #00A1FF;
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+  border-left: 3px solid #004088;
+}
+.we__left p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 2rem;
+}
+.we__right {
+  background-color: #404040;
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+  border-left: 3px solid #004088;
+}
+.we__right p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 2rem;
 }
 
 .art {
-  background-image: url(../assets/img/home/art.webp);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
   padding: 6rem 0;
+  background-color: #DBF2FF;
 }
 .art__title {
   text-align: center;
@@ -309,7 +334,6 @@
 }
 .art__title h2 {
   margin: 0 0 1.6rem;
-  color: #fff !important;
 }
 .art__grid {
   display: grid;
@@ -337,7 +361,7 @@
   gap: 0.8rem;
   padding: 2rem 4rem;
   border: 1px solid #FFFFFF;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -347,14 +371,6 @@
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-.art__card:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-}
-.art__card:hover .art__content {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
 .art__card p {
   color: #000;
   font-size: 1.6rem;
@@ -362,33 +378,117 @@
   margin: 0;
   text-align: center;
 }
-.art__content {
-  text-align: center;
-  background-color: #004088;
-  padding: 1.6rem 3rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  -webkit-transform: translateY(15rem);
-          transform: translateY(15rem);
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  border-radius: 0 0 1.2rem 1.2rem;
+.art__box {
+  background-color: #fff;
+  border-radius: 1.2rem;
+  margin: 0 0 6rem;
 }
-.art__content h3 {
+.art__head {
+  background-color: #004088;
+  border-radius: 1.2rem 1.2rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3.6rem;
+}
+.art__head h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+.art__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+  padding: 3.6rem;
+}
+.art__list ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #F5F5F5;
+  border-radius: 1.6rem;
+  padding: 1.6rem 2.4rem;
+}
+.art__list ul li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+.art__list ul li p {
+  color: #000000;
   font-size: 1.6rem;
   font-weight: 500;
-  margin: 0 0 0.8rem;
-  color: #FFFFFF;
-}
-.art__content span {
-  font-size: 1.2rem;
-  font-weight: 500;
   margin: 0;
-  color: #fff;
+}
+.art__model {
+  padding: 8rem 0 0;
+}
+.art__model h2 {
+  text-align: center;
+  margin: 0 0 4rem;
+}
+.art__model-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.4rem;
+}
+.art__model-img {
+  text-align: center;
+  margin: 0 0 2.4rem;
+}
+.art__model-card {
+  background-color: #fff;
+  border-radius: 1.2rem;
+  padding: 4rem 2.4rem;
+}
+.art__model-card ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+}
+.art__model-card ul li {
+  list-style-type: none;
+}
+.art__model-card ul li span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #000;
+}
+.art__model-card ul li p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+  color: #000;
+}
+.art__model-flex {
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  background-color: #DBF2FF;
+}
+.art__model-flex-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1rem;
 }
 
 .visit {
@@ -886,6 +986,82 @@
   .hero__grid img {
     width: 15rem;
   }
+}
+
+.detail {
+  padding: 6rem 0 0;
+}
+.detail__one {
+  background-color: #004088;
+  border-radius: 1.2rem;
+  padding: 2rem;
+}
+.detail__one p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+}
+.detail__one img {
+  margin: 0 0 1.2rem;
+}
+.detail__pdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+  border: 1px solid #004088;
+  border-radius: 1.2rem;
+  padding: 2rem 3rem;
+  margin: 2.4rem 0 0;
+}
+.detail__pdf a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.4rem;
+}
+.detail__pdf a span {
+  color: #004088;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.detail__slider {
+  position: relative;
+  height: 46rem;
+  margin: 0 0 2rem;
+}
+.detail__slider .banner__slide-img {
+  height: 46rem;
+}
+.detail__box {
+  background-color: #BCA921;
+  padding: 1.6rem;
+  border-radius: 1.2rem 0 1.2rem 1.2rem;
+}
+.detail__box p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0 0 2rem;
+}
+.detail__upcoming iframe {
+  width: 100%;
+  height: 27rem;
+}
+.detail__pic {
+  background-color: #BCA921;
+  padding: 1.6rem 1.6rem 0 1.6rem;
+  border-radius: 1.2rem 1.2rem 0 0;
+  margin: 2rem 0 -3rem;
+  text-align: center;
 }
 
 .about {
