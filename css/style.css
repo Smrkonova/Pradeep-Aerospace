@@ -2895,6 +2895,11 @@ img {
   padding: 2rem 4rem 3rem;
 }
 
+.modal-close {
+  text-align: end;
+  cursor: pointer;
+}
+
 .model-img {
   text-align: center;
 }
