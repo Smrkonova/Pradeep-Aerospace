@@ -108,6 +108,29 @@ img {
     }
 }
 
+.modal-dialog {
+    max-width: 60% !important;
+}
+
+.modal-content {
+    padding: 2rem 4rem 3rem;
+}
+
+.model-img {
+    text-align: center;
+
+    img {
+        margin: 0 0 1.6rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin: 0;
+        color: #000;
+    }
+}
+
 .thank {
     padding: 10rem 0 4rem;
 
