@@ -548,19 +548,21 @@
   width: 100%;
 }
 .visit__inside-tab {
-  margin: 2rem 0 0;
+  margin: 4rem 0 2rem;
 }
 .visit__inside-tab .nav-pills {
   -webkit-box-pack: start !important;
       -ms-flex-pack: start !important;
           justify-content: flex-start !important;
   gap: 2rem;
+  margin: 0;
 }
 .visit__inside-tab .nav-pills .nav-item .nav-link {
   color: #929292;
-  font-weight: 700;
-  font-size: 2.4rem;
+  font-weight: 500 !important;
+  font-size: 2rem !important;
   border-radius: 1.2rem !important;
+  padding: 1rem 2rem !important;
 }
 .visit__inside-tab .nav-pills .nav-item .nav-link.active {
   background-color: #004088 !important;

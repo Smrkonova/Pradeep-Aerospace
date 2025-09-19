@@ -389,19 +389,21 @@
     }
 
     &__inside-tab {
-        margin: 2rem 0 0;
+        margin: 4rem 0 2rem;
 
 
         .nav-pills {
             justify-content: flex-start !important;
             gap: 2rem;
+            margin: 0;
 
             .nav-item {
                 .nav-link {
                     color: #929292;
-                    font-weight: 700;
-                    font-size: 2.4rem;
+                    font-weight: 500 !important;
+                    font-size: 2rem !important;
                     border-radius: 1.2rem !important;
+                    padding: 1rem 2rem !important;
                 }
 
                 .nav-link.active {
