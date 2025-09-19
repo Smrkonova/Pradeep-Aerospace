@@ -1,13 +1,13 @@
 .about {
-    padding: 8rem 0 0;
+    padding: 10rem 0 0;
 
     &__bg {
-        background-image: url(../assets/img/about/banner.png);
+        background-image: url(../assets/img/about/about-banner.png);
         background-repeat: no-repeat;
         height: 57.5rem;
         background-size: cover;
         display: flex;
-        align-items: center;
+        align-items: end;
         justify-content: center;
 
         @media #{$xs} {
@@ -17,6 +17,7 @@
 
     &__content {
         text-align: center;
+        padding: 0 0 6rem;
 
         h1 {
             font-size: 4rem;
@@ -43,7 +44,7 @@
         ul {
             padding: 1.2rem 1.6rem;
             border: 1px solid #E7E6E6;
-            background: #1E202133;
+            background-color: #3E3E3E66;
             display: inline-flex;
             align-items: center;
             gap: 2.4rem;
@@ -447,6 +448,22 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2.4rem;
+
+        @media #{$md} {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media #{$xs} {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.4rem;
+        }
+    }
+
+    &__grids {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.4rem;
+        margin: 6rem 0 0;
 
         @media #{$md} {
             grid-template-columns: repeat(2, 1fr);

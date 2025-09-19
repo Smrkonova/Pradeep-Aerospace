@@ -1086,19 +1086,19 @@
 }
 
 .about {
-  padding: 8rem 0 0;
+  padding: 10rem 0 0;
 }
 .about__bg {
-  background-image: url(../assets/img/about/banner.png);
+  background-image: url(../assets/img/about/about-banner.png);
   background-repeat: no-repeat;
   height: 57.5rem;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1110,6 +1110,7 @@
 }
 .about__content {
   text-align: center;
+  padding: 0 0 6rem;
 }
 .about__content h1 {
   font-size: 4rem;
@@ -1136,7 +1137,7 @@
 .about__content ul {
   padding: 1.2rem 1.6rem;
   border: 1px solid #E7E6E6;
-  background: rgba(30, 32, 33, 0.2);
+  background-color: rgba(62, 62, 62, 0.4);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1562,6 +1563,23 @@
 }
 @media (max-width: 767px) {
   .add__grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.4rem;
+  }
+}
+.add__grids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+  margin: 6rem 0 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .add__grids {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .add__grids {
     grid-template-columns: repeat(1, 1fr);
     gap: 1.4rem;
   }
