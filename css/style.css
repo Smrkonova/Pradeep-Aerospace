@@ -2094,6 +2094,114 @@
   font-weight: 600;
 }
 
+.volunteer {
+  padding: 8rem 0;
+}
+.volunteer__title {
+  text-align: center;
+  margin: 0 0 6rem;
+}
+.volunteer__content h3 {
+  color: #1E2021;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 1.2rem 1.6rem;
+  border-left: 3px solid #004088;
+  border-radius: 1.2rem;
+}
+.volunteer__para {
+  margin: 4rem 0;
+}
+.volunteer__para p {
+  margin: 0;
+  color: #1E2021;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.volunteer__list h4 {
+  color: #1E2021;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 1.6rem;
+}
+.volunteer__list ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+}
+.volunteer__list ul li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.6rem;
+  padding: 1.2rem;
+  border-left: 3px solid #004088;
+  border-radius: 1.2rem;
+}
+.volunteer__list ul li p {
+  color: #1E2021;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+}
+.volunteer__grid {
+  margin: 4rem 0 0;
+}
+.volunteer__grid ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.volunteer__grid ul li {
+  list-style-type: none;
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+  text-align: center;
+}
+.volunteer__grid ul li:nth-child(1) {
+  background-color: #004088;
+}
+.volunteer__grid ul li:nth-child(2) {
+  background-color: #F97316;
+}
+.volunteer__grid ul li:nth-child(3) {
+  background-color: #22C55E;
+}
+.volunteer__grid ul li h4 {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+.volunteer__grid ul li p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0.6rem 0 0;
+  color: #fff;
+}
+
+.timeline {
+  padding: 8rem 0;
+}
+.timeline__title {
+  text-align: center;
+  margin: 0 0 6rem;
+}
+
 .service {
   padding: 8rem 0 0;
 }
