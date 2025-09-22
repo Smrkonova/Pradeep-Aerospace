@@ -855,7 +855,9 @@
   margin: 0 0 3rem;
 }
 .letter__img img {
-  width: 50%;
+  width: 60%;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .meeting {
@@ -2506,7 +2508,11 @@
 }
 
 .service__content-list__list {
-  padding: 8rem 0 0;
+  padding: 3rem 6rem;
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1019607843);
+          box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 1.2rem;
+  margin: 6rem 0 0;
 }
 .service__content-list__list h2 {
   text-align: center;
@@ -2532,19 +2538,21 @@
   }
 }
 .service__content-list__list p {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: 600;
   line-height: 1.8;
   margin: 0 0 2rem;
   color: #1E2021;
   text-align: justify;
 }
 .service__content-list__list ul {
-  margin: 0 0 2rem 2rem;
+  margin: 0 0 2rem 5rem;
   padding: 0;
   list-style: disc;
 }
 .service__content-list__list ul li {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: 600;
   line-height: 1.8;
   margin: 1rem 0;
   color: #1E2021;
