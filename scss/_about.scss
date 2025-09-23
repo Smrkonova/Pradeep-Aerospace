@@ -918,11 +918,37 @@
         text-align: center;
         border-radius: 1.2rem;
 
+        &:nth-child(1) {
+            background-color: #812570;
+        }
+
+        &:nth-child(2) {
+            background-color: #CE376C;
+        }
+
+        &:nth-child(3) {
+            background-color: #F4911C;
+        }
+
         h3 {
-            color: $text;
+            color: #fff;
             font-size: 2.4rem;
             font-weight: 700;
-            margin: 0 0 1.2rem;
+            margin: 0 0 3rem;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                top: 4rem;
+                left: 50%;
+                right: 0;
+                bottom: 0;
+                transform: translate(-50%, -50%);
+                width: 14rem;
+                height: 0.2rem;
+                background-color: #fff;
+                content: "";
+            }
 
             @media #{$xs} {
                 font-size: 1.8rem;
@@ -933,11 +959,16 @@
             font-size: 2rem;
             font-weight: 400;
             margin: 0 0 2.4rem;
-            color: $text;
+            color: #fff;
 
             @media #{$xs} {
                 font-size: 1.6rem;
             }
+        }
+
+        a {
+            background-color: #fff !important;
+            color: #000 !important;
         }
 
     }
