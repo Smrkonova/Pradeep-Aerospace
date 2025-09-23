@@ -555,7 +555,7 @@
       -ms-flex-pack: start !important;
           justify-content: flex-start !important;
   gap: 2rem;
-  margin: 0;
+  margin: 0 0 3rem !important;
 }
 .visit__inside-tab .nav-pills .nav-item .nav-link {
   color: #929292;
