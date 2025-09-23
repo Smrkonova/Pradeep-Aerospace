@@ -2975,15 +2975,19 @@
 .meet__video iframe {
   border-radius: 1.2rem;
 }
+.meet__content {
+  border-radius: 1.2rem;
+  height: 100%;
+}
 .meet__content h3 {
   font-size: 3.2rem;
   font-weight: 700;
   margin: 0 0 2.4rem;
-  color: #1E2021;
+  color: #fff;
 }
 .meet__content p {
-  color: #929292;
-  font-size: 2rem;
+  color: #fff;
+  font-size: 1.6rem;
   font-weight: 500;
   margin: 0 0 2.4rem;
 }
@@ -2992,7 +2996,8 @@
 }
 
 .padding-left {
-  padding: 0 0 0 3rem;
+  padding: 3rem;
+  background-color: #812570;
 }
 @media (max-width: 767px) {
   .padding-left {
@@ -3001,7 +3006,8 @@
 }
 
 .padding-right {
-  padding: 0 3rem 0 0;
+  padding: 3rem;
+  background-color: #CE376C;
 }
 @media (max-width: 767px) {
   .padding-right {
