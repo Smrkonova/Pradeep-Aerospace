@@ -110,10 +110,18 @@ img {
 
 .modal-dialog {
     max-width: 60% !important;
+
+    @media #{$xs} {
+        max-width: 100% !important;
+    }
 }
 
 .modal-content {
     padding: 2rem 4rem 3rem;
+
+    @media #{$xs} {
+        padding: 2rem;
+    }
 }
 
 .modal-close {
@@ -140,6 +148,10 @@ img {
         font-weight: 500;
         margin: 0;
         color: #000;
+
+        @media #{$xs} {
+            font-size: 1.4rem;
+        }
     }
 }
 
