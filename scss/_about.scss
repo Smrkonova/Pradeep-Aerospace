@@ -51,6 +51,8 @@
             margin: 0;
             justify-content: center;
             border-radius: 1.2rem;
+            flex-wrap: wrap;
+            max-width: 65%;
 
             @media #{$xs} {
                 flex-wrap: wrap;

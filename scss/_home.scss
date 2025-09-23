@@ -726,13 +726,16 @@
         img {
             width: 60%;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border: 0.2rem solid #e7e6e6;
+            padding: 1rem;
+
         }
     }
 }
 
 .meeting {
     padding: 6rem 0;
-    background-color: #DBF2FF;
+    background-color: #fff;
 
     &__title {
         text-align: center;
