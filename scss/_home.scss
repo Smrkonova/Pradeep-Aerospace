@@ -327,6 +327,25 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1.1rem;
     }
+
+    &__media {
+        margin: 6rem 0 0;
+
+        h2 {
+            text-align: center;
+            margin: 0 0 4rem;
+        }
+    }
+
+    &__media-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+        img {
+            border-radius: 1.2rem;
+        }
+    }
 }
 
 .visit {

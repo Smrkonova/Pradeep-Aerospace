@@ -491,6 +491,21 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1.1rem;
 }
+.art__media {
+  margin: 6rem 0 0;
+}
+.art__media h2 {
+  text-align: center;
+  margin: 0 0 4rem;
+}
+.art__media-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.art__media-grid img {
+  border-radius: 1.2rem;
+}
 
 .visit {
   padding: 8rem 0;
